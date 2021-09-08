@@ -20,7 +20,7 @@ while True:
         naamgui = (str.upper(naamgui))
         naamgui = naamgui.replace(" ", "")
         print(naamgui, "wordt geopend")
-        os.system('python '+str(naamgui)+'.py')
+        os.system('python commands/'+str(naamgui)+'.py')
     
                 
 
