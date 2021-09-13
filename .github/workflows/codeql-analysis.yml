@@ -18,7 +18,7 @@ on:
     # The branches below must be a subset of the branches above
     branches: [ master ]
   schedule:
-    - cron: '42 20 * * 5'
+    - cron: '32 9 * * 3'
 
 jobs:
   analyze:
@@ -69,3 +69,8 @@ jobs:
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v1
+    - name: Setup Python
+      uses: actions/setup-python@v2.2.2
+      with:
+        # Version range or exact version of a Python version to use, using SemVer's version range syntax.
+        python-version: 3.x
