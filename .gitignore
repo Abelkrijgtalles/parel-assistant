@@ -2,3 +2,5 @@
 /.vscode
 /videolatenzien/__pycache__
 /videolatenzien/.vscode
+/commands/data.pkl
+test.py
