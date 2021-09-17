@@ -2,5 +2,14 @@
     "macallert": "Let op! Niet voor Mac. Alleen Windows en Linux i.v.m terminal",
     "pakketinstall": "Alle pakketten installeren",
     "pakketinstallsuc": "Pakketten geinstalleerd!",
-    "prostart": "Programma starten"
+    "prostart": "Programma starten",
+    "upcheck": "Checken op updates",
+    "updateinstalll": "Er is een nieuwe update, wil je hem installeren?",
+    "isgit": "Is git geïnstalleerd?",
+    "hoi": "Hoi",
+    "wat": "Wat kan ik voor je doen?",
+    "open": "wordt geopend",
+    "songt": "Songteksten",
+    "zoeken": "Waar wil je op zoeken?",
+    "website": "De website"
 }
