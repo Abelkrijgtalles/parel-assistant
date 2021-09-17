@@ -1,6 +1,7 @@
 import os
 import time
 from openeentranslate import open as op
+from openlandcode import open as landc
 #import random
 #import time
 #import turtle as t
@@ -10,14 +11,20 @@ from openeentranslate import open as op
 #import os
 #import tkinter as tk
 #from tkinter import simpledialog as simpel
-print(op("nl", "pakketinstall"))
-print(op("nl", "macallert"))
+welketaal = input("What is your two letter language code? If you don't know, then go to this website: http://www.abelr.tk/lc")
+
+os.system("echo", welketaal, "> welketaal.txt")
+
+taal = landc
+
+print(op(taal, "pakketinstall"))
+print(op(taal, "macallert"))
 
 os.system("python -m pip install -U pip")
 os.system("pip install turtle")
 os.system("pip install pygame")
 os.system("pip install pgzero")
 
-print(op("nl", "pakketinstallsuc"))
-print(op("nl", "prostart"))
+print(op(taal, "pakketinstallsuc"))
+print(op(taal, "prostart"))
 os.system("python parelassistant.py")

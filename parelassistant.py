@@ -7,8 +7,12 @@ from pprint import pprint
 import os
 import tkinter as tk
 from tkinter import simpledialog as simpel
+from openeentranslate import open as op
+from openlandcode import open as landc
 
-print("Checken op updates")
+taal = landc
+
+print(op("nl", "upcheck"))
 os.system("curl https://raw.githubusercontent.com/Abelkrijgtalles/parel-assistant/master/versie.txt > versieonline.txt")
 
 with open("versieonline.txt") as versieonlinenietint:
@@ -17,11 +21,11 @@ with open("versie.txt") as versienietint:
     versie = int(versienietint.read())
 
 if versieonline > versie:
-    updateinstall = input("Er is een nieuwe update, wil je hem installeren? J/N")
+    updateinstall = input(op(taal, "updateinstall"), "J/N")
     updateinstall = updateinstall.upper()
     updateinstall = updateinstall.replace(" ", "")
     if updateinstall == "J":
-        isgit = input("Is git geïnstalleerd? J/N")
+        isgit = input(op(taal, "updateinstall"), "J/N")
         isgit = isgit.upper()
         isgit = isgit.replace(" ", "")
         if isgit == "J":
@@ -34,10 +38,10 @@ root = tk.Tk()
 root.withdraw()
 
 while True:
-        naamgui = simpel.askstring(title="Hoi", prompt="Wat kan ik voor je doen?")
+        naamgui = simpel.askstring(title=op(taal, "hoi"), prompt=op(taal, "wat"))
         naamgui = (str.upper(naamgui))
         naamgui = naamgui.replace(" ", "")
-        print(naamgui, "wordt geopend")
+        print(naamgui, op(taal, "open"))
         os.system('python commands/'+str(naamgui)+'.py')
     
                 
