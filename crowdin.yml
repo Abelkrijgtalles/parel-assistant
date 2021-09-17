@@ -1,9 +1,4 @@
 files:
-  - source: /teksten/nl/macallert.txt
+  - source: /teksten/nl/vertaling.json
     translation: /teksten/%two_letters_code%/%file_name%.%file_extension%
-  - source: /teksten/nl/pakketinstall.txt
-    translation: /teksten/%two_letters_code%/%file_name%.%file_extension%
-  - source: /teksten/nl/pakketinstallsuc.txt
-    translation: /teksten/%two_letters_code%/%file_name%.%file_extension%
-  - source: /teksten/nl/prostart.txt
-    translation: /teksten/%two_letters_code%/%file_name%.%file_extension%
+
