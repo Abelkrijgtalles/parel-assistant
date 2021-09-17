@@ -9,7 +9,7 @@ currently being supported with updates.
 | Version | Supported          |
 | ------- | ------------------ |
 | newest  | :white_check_mark: |
-| 14 or earlier | ❎ |
+| 15 or earlier | ❎ |
 
 ## Reporting a Vulnerability
 

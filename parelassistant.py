@@ -8,12 +8,15 @@ import os
 import tkinter as tk
 from tkinter import simpledialog as simpel
 
+print("Checken op updates")
 os.system("curl https://raw.githubusercontent.com/Abelkrijgtalles/parel-assistant/master/versie.txt > versieonline.txt")
 
-versieonline = open("versieonline.txt", "r")
-versie = open("versie.txt", "r")
+with open("versieonline.txt") as versieonlinenietint:
+    versieonline = int(versieonlinenietint.read())
+with open("versie.txt") as versienietint:
+    versie = int(versienietint.read())
 
-if not versie == versieonline:
+if versieonline > versie:
     updateinstall = input("Er is een nieuwe update, wil je hem installeren? J/N")
     updateinstall = updateinstall.upper()
     updateinstall = updateinstall.replace(" ", "")
