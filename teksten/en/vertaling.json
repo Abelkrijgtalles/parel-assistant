@@ -1,15 +1,15 @@
 {
-    "macallert": "Let op! Niet voor Mac. Alleen Windows en Linux i.v.m terminal",
-    "pakketinstall": "Alle pakketten installeren",
-    "pakketinstallsuc": "Pakketten geinstalleerd!",
-    "prostart": "Programma starten",
-    "upcheck": "Checken op updates",
-    "updateinstalll": "Er is een nieuwe update, wil je hem installeren?",
-    "isgit": "Is git geïnstalleerd?",
-    "hoi": "Hoi",
-    "wat": "Wat kan ik voor je doen?",
-    "open": "wordt geopend",
-    "songt": "Songteksten",
-    "zoeken": "Waar wil je op zoeken?",
-    "website": "De website"
+    "macallert": "Pay attention! Not for Mac. Windows and Linux only due to terminal",
+    "pakketinstall": "Installing all packages",
+    "pakketinstallsuc": "Packages installed!",
+    "prostart": "Starting program",
+    "upcheck": "Checking for updates",
+    "updateinstalll": "There is a new update, do you want to install it?",
+    "isgit": "Is git installed?",
+    "hoi": "Hi",
+    "wat": "What can I do for you?",
+    "open": "opens",
+    "songt": "Lyrics",
+    "zoeken": "What do you want to search for?",
+    "website": "The website"
 }
