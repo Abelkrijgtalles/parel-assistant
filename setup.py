@@ -1,5 +1,6 @@
 import os
 import time
+from openeentranslate import open as op
 #import random
 #import time
 #import turtle as t
@@ -9,23 +10,14 @@ import time
 #import os
 #import tkinter as tk
 #from tkinter import simpledialog as simpel
-with open("teksten/nl/macallert.txt") as macallert:
-    macallert = str(macallert.read())
-with open("teksten/nl/pakketinstall.txt") as pakketinstall:
-    pakketinstall = str(pakketinstall.read())
-with open("teksten/nl/pakketinstallsuc.txt") as pakketinstallsuc:
-    pakketinstallsuc = str(pakketinstallsuc.read())
-with open("teksten/nl/prostart.txt") as prostart:
-    prostart = str(prostart.read())
-
-print(pakketinstall)
-print(macallert)
+print(op("nl", "pakketinstall"))
+print(op("nl", "macallert"))
 
 os.system("python -m pip install -U pip")
 os.system("pip install turtle")
 os.system("pip install pygame")
 os.system("pip install pgzero")
 
-print(pakketinstallsuc)
-print(prostart)
+print(op("nl", "pakketinstallsuc"))
+print(op("nl", "prostart"))
 os.system("python parelassistant.py")
