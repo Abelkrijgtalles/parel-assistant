@@ -1,0 +1,3 @@
+files:
+  - source: /teksten/nl/macallert.txt
+    translation: /teksten/%two_letters_code%/%file_name%.%file_extension%
