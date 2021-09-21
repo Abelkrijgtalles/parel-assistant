@@ -1,7 +1,7 @@
 # WARNING THIS IS DUTCH AND NOT ENGLISH
-Help translating! http://www.abelr.tk/vp
+Help translating! https://abelr.tk/vp
 
-Help met vertalen! http://www.abelr.tk/vp
+Help met vertalen! https://abelr.tk/vp
 # parel assistant
 
 Hoi
