@@ -1,7 +1,11 @@
 import pickle
+from openeentranslate import openen as op
+from openlandcode import openen as landc
+
+taal = landc
 aanhalingsteken = '"'
 data = []
-dataalgemaakt = (str.upper(input('Heb je al je data ingevoerd? J/N')))
+dataalgemaakt = (str.upper(input(op(taal, "pakketinstallsuc"), 'J/N')))
 if dataalgemaakt == 'N':
     data = []
     data.append(input('Wat is je voornaam? '))

@@ -1,8 +1,8 @@
 import webbrowser as web
 import tkinter as tk
 from tkinter import simpledialog as simpel
-from openeentranslate import open as op
-from openlandcode import open as landc
+from openeentranslate import openen as op
+from openlandcode import openen as landc
 
 taal = landc
 

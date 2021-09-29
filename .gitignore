@@ -4,5 +4,6 @@
 /videolatenzien/.vscode
 /commands/data.pkl
 test.py
-versieonline.txt
+config/versieonline.txt
 test.json
+config/welketaal.txt

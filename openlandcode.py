@@ -1,3 +1,3 @@
-def open():
-    with open("welketaal.txt") as welketaal:
+def openen():
+    with open("config/welketaal.txt") as welketaal:
         return str(welketaal.read())

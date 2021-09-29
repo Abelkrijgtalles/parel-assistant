@@ -1,23 +1,20 @@
-import random
-import time
 import turtle as t
 import webbrowser as web
-import string
 from pprint import pprint
 import os
 import tkinter as tk
 from tkinter import simpledialog as simpel
-from openeentranslate import open as op
-from openlandcode import open as landc
+from openeentranslate import openen as op
+from openlandcode import openen as landc
 
 taal = landc
 
 print(op("nl", "upcheck"))
-os.system("curl https://raw.githubusercontent.com/Abelkrijgtalles/parel-assistant/master/versie.txt > versieonline.txt")
+os.system("curl https://raw.githubusercontent.com/Abelkrijgtalles/parel-assistant/master/versie.txt > config/versieonline.txt")
 
-with open("versieonline.txt") as versieonlinenietint:
+with open("config/versieonline.txt") as versieonlinenietint:
     versieonline = int(versieonlinenietint.read())
-with open("versie.txt") as versienietint:
+with open("config/versie.txt") as versienietint:
     versie = int(versienietint.read())
 
 if versieonline > versie:
@@ -29,7 +26,7 @@ if versieonline > versie:
         isgit = isgit.upper()
         isgit = isgit.replace(" ", "")
         if isgit == "J":
-            os.system("git clone https://github.com/Abelkrijgtalles/parel-assistant ../parel-assistant")
+            os.system("git pull")
 #Wat te doen
 #4: Gui maken (MOEILIJK!!!!!!!!! en het moet wel mooi zijn)
 
