@@ -1,6 +1,3 @@
-import turtle as t
-import webbrowser as web
-from pprint import pprint
 import os
 import tkinter as tk
 from tkinter import simpledialog as simpel
@@ -27,20 +24,18 @@ if versieonline > versie:
         isgit = isgit.replace(" ", "")
         if isgit == "J":
             os.system("git pull")
-#Wat te doen
-#4: Gui maken (MOEILIJK!!!!!!!!! en het moet wel mooi zijn)
+# Wat te doen
+# 4: Gui maken (MOEILIJK!!!!!!!!! en het moet wel mooi zijn)
 
 naamgui = ""
 root = tk.Tk()
 root.withdraw()
 
 while True:
-        naamgui = simpel.askstring(title=op(taal, "hoi"), prompt=op(taal, "wat"))
-        naamgui = (str.upper(naamgui))
-        naamgui = naamgui.replace(" ", "")
-        print(naamgui, op(taal, "open"))
-        os.system('python commands/'+str(naamgui)+'.py')
-    
-                
+    naamgui = simpel.askstring(title=op(taal, "hoi"), prompt=op(taal, "wat"))
+    naamgui = (str.upper(naamgui))
+    naamgui = naamgui.replace(" ", "")
+    print(naamgui, op(taal, "open"))
+    os.system('python commands/'+str(naamgui)+'.py')
 
-#EINDE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# EINDE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
