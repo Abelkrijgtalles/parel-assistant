@@ -27,7 +27,6 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
         pip install turtle
         pip install pygame
-        pip install pgzero
     - name: Ik weet niet wat dit iets. Iets van Lint with flak8
       run: |
         # stop the build if there are Python syntax errors or undefined names

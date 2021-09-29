@@ -23,7 +23,6 @@ print(op(taal, "macallert"))
 os.system("python -m pip install -U pip")
 os.system("pip install turtle")
 os.system("pip install pygame")
-os.system("pip install pgzero")
 
 print(op(taal, "pakketinstallsuc"))
 print(op(taal, "prostart"))
