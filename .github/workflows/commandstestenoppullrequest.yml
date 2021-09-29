@@ -8,16 +8,12 @@ jobs:
   werken_de_commands:
     runs-on: ubuntu-latest
     steps:
-      - name: Code van github krijgen
       - uses: actions/checkout@v2
-      - name: Python opzetten
       - uses: actions/setup-python@v2
       - with:
         - python-version: 3.9
-      - name: De setup runnen
       - run: python -m pip install -U pip
       - run: pip install turtle
       - run: pip install pygame
       - run: pip install pgzero
-      - name: Alle commands testen
       - run: python3 commandtester.py
