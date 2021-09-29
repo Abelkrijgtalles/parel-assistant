@@ -9,7 +9,7 @@ currently being supported with updates.
 | Version | Supported          |
 | ------- | ------------------ |
 | newest  | :white_check_mark: |
-| 15 or earlier | ❎ |
+| 18 or earlier | ❎ |
 
 ## Reporting a Vulnerability
 
@@ -27,7 +27,7 @@ Deze versies worden ondersteund door updates:
 | Versie | Ondersteund |
 | ------- | ------------------ |
 | nieuwste| :white_check_mark: |
-| 14 of eerder | ❎ |
+| 18 of eerder | ❎ |
 
 
 ## Een kwetsbaarheid melden

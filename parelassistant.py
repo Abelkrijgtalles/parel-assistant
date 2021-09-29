@@ -10,7 +10,7 @@ from openlandcode import openen as landc
 taal = landc
 
 print(op("nl", "upcheck"))
-os.system("curl https://raw.githubusercontent.com/Abelkrijgtalles/parel-assistant/master/versie.txt > config/versieonline.txt")
+os.system("curl https://raw.githubusercontent.com/Abelkrijgtalles/parel-assistant/master/config/versie.txt > config/versieonline.txt")
 
 with open("config/versieonline.txt") as versieonlinenietint:
     versieonline = int(versieonlinenietint.read())
