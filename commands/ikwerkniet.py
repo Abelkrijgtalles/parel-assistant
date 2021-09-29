@@ -1,1 +1,0 @@
-os.system("ech ik werk niet")
