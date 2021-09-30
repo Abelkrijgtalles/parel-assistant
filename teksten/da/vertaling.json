@@ -12,5 +12,18 @@
     "songt": "Songteksten",
     "zoeken": "Waar wil je op zoeken?",
     "website": "De website",
-    "dataalgemaakt": "Heb je al je data ingevoerd?"
+    "dataalgemaakt": "Heb je al je data ingevoerd?",
+    "voornaam": "Wat is je voornaam? ",
+    "achternaam": "Wat is je achternaam? ",
+    "leeftijd": "Wat is je leeftijd? ",
+    "woonplaats": "In welke stad/dorp woon je? ",
+    "eten": "Wat is je lievelingseten? ",
+    "ietsanders": "Is er nog wat ander wat je wil zeggen? ",
+    "voornaamis": "Je voornaam is",
+    "achternaamis": "En je achternaam is dan",
+    "leeftijdis": "En je leeftijd is",
+    "datanogeenkeer": "Je kan nog een keer data typen/zeggen om je data te lezen of te wijzigen",
+    "woonplaatsis": "Je woont in",
+    "etenis": "Je lievenligns eten is",
+    "iestandersis": "Dit wou je ook nog zeggen"
 }
