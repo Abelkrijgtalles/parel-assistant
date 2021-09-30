@@ -6,4 +6,5 @@
 test.py
 config/versieonline.txt
 test.json
-/videolatenzien
+videolatenzien
+node_modules
