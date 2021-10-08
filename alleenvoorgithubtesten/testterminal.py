@@ -27,11 +27,11 @@ for name in list_of_files:
             ding = lijn.split("(")
             if ding[0] == "os.system":
                 lijstvanos.append(lijn)
-        hoiman = convert_list_to_string(lijstvanos, "HoiditisAbelvanAbelkrijgtallesmeteennieuwevideoenvandaaghebbenweeencoolprogramma")
-        hoiman = hoiman.replace("HoiditisAbelvanAbelkrijgtallesmeteennieuwevideoenvandaaghebbenweeencoolprogramma", "\n")
-        with open("config/toevoegen.txt") as dingetjeserbij:
-            dingetjeserbij = str(dingetjeserbij.read())
-            hoiman = "import os\n\n" + dingetjeserbij + "\n\n" + hoiman
-            print(hoiman)
-        myfile.close()
+hoiman = convert_list_to_string(lijstvanos, "HoiditisAbelvanAbelkrijgtallesmeteennieuwevideoenvandaaghebbenweeencoolprogramma")
+hoiman = hoiman.replace("HoiditisAbelvanAbelkrijgtallesmeteennieuwevideoenvandaaghebbenweeencoolprogramma", "\n")
+with open("config/toevoegen.txt") as dingetjeserbij:
+    dingetjeserbij = str(dingetjeserbij.read())
+    hoiman = "import os\n\n" + dingetjeserbij + "\n\n" + hoiman
+    print(hoiman)
+myfile.close()
 

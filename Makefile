@@ -9,3 +9,6 @@ terminal:
 
 pushnm:
 	git push -u origin master
+
+terminalsafe:
+	python3 alleenvoorgithubtesten/testterminal.py > test.py
