@@ -10,9 +10,13 @@ from openlandcode import openen as landc
 # import os
 # import tkinter as tk
 # from tkinter import simpledialog as simpel
+
+
+
 welketaal = input("What is your two letter language code? If you don't know, then go to this website: https://abelr.tk/lc : ")
 
-os.system(str("echo", welketaal, "> config/welketaal.txt"))
+with open("config/welketaal.txt") as f:
+    f.write(welketaal)
 
 taal = landc
 
