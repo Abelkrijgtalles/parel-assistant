@@ -19,5 +19,5 @@ Run daar naar gewoon setup.py
 
 # zelf bugs fixen/pull request maken
 
-Als je een pull request gaat maken moet je in het bestand: "config/toevoegen.txt" variabelen toevoegen die je gebruikt in de command "os.system()". Als je dat niet doet zal de test falen.
+Als je een pull request gaat maken moet je in het bestand: "config/toevoegen.txt" variabelen toevoegen die je gebruikt in de command "os.system()" (in python). Als je dat niet doet zal de test falen.
 Heb je geen variabelen gebruikt? Dan hoef je niks toetevoegen. 
