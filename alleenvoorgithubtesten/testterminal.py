@@ -31,7 +31,7 @@ for name in list_of_files:
         hoiman = hoiman.replace("HoiditisAbelvanAbelkrijgtallesmeteennieuwevideoenvandaaghebbenweeencoolprogramma", "\n")
         with open("config/toevoegen.txt") as dingetjeserbij:
             dingetjeserbij = str(dingetjeserbij.read())
-            hoiman = "import os\n\n" + dingetjeserbij + hoiman
+            hoiman = "import os\n\n" + dingetjeserbij + "\n\n" + hoiman
             print(hoiman)
         myfile.close()
 
