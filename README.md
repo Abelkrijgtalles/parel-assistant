@@ -7,7 +7,7 @@ Help met vertalen! https://abelr.tk/vp
 Hoi
 Dit is de beste nederlandse assistant 😁
 Het is nog steeds in dev
-Als je een bug/error vindt mag je gerust een pull request maken 😀
+Als je een bug/error vindt mag je gerust een pull request maken 😀 Meer info hieronder
 
 # install/setup
 
@@ -16,3 +16,8 @@ je hebt ook python 3 nodig
 en je moet ook python aan PATH toe gevoegd hebben.
 git is ook handig om te hebben
 Run daar naar gewoon setup.py
+
+# zelf bugs fixen/pull request maken
+
+Als je een pull request gaat maken moet je in het bestand: "config/toevoegen.txt" variabelen toevoegen die je gebruikt in de command "os.system()". Als je dat niet doet zal de test falen.
+Heb je geen variabelen gebruikt? Dan hoef je niks toetevoegen. 
