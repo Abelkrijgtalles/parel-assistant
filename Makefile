@@ -12,3 +12,6 @@ pushnm:
 
 terminalsafe:
 	python3 alleenvoorgithubtesten/testterminal.py > test.py
+
+setup:
+	python3 setup.py

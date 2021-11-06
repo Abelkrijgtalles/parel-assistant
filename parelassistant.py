@@ -1,10 +1,8 @@
 import os
-import tkinter as tk
-from tkinter import simpledialog as simpel
 from openeentranslate import openen as op
 from openlandcode import openen as landc
 
-taal = landc
+taal = landc()
 
 print(op("nl", "upcheck"))
 os.system("curl https://raw.githubusercontent.com/Abelkrijgtalles/parel-assistant/master/config/versie.txt > config/versieonline.txt")
@@ -28,14 +26,12 @@ if versieonline > versie:
 # 4: Gui maken (MOEILIJK!!!!!!!!! en het moet wel mooi zijn)
 
 naamgui = ""
-root = tk.Tk()
-root.withdraw()
 
 while True:
-    naamgui = simpel.askstring(title=op(taal, "hoi"), prompt=op(taal, "wat"))
+    naamgui = input(op(taal, "wat"))
     naamgui = (str.upper(naamgui))
     naamgui = naamgui.replace(" ", "")
     print(naamgui, op(taal, "open"))
-    os.system('python commands/'+str(naamgui)+'.py')
+    os.system('python3 commands/'+str(naamgui)+'.py')
 
 # EINDE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

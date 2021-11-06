@@ -11,14 +11,11 @@ from openlandcode import openen as landc
 # import tkinter as tk
 # from tkinter import simpledialog as simpel
 
-
-
-welketaal = input("What is your two letter language code? If you don't know, then go to this website: https://abelr.tk/lc : ")
+taal = landc()
 
 with open("config/welketaal.txt") as f:
+    welketaal = input(op(taal, "welketaal"))
     f.write(welketaal)
-
-taal = landc
 
 print(op(taal, "pakketinstall"))
 print(op(taal, "macallert"))

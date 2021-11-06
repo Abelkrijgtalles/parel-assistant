@@ -1,7 +1,7 @@
-import json
-
 def openen(taal, bestand):
-    with open("teksten/" + taal + "/vertaling.json") as ietsofzo:
+    import json
+    openhet = str("teksten/" + taal + "/vertaling.json")
+    with open(openhet) as ietsofzo:
         ietsofzo = str(ietsofzo.read())
 
 

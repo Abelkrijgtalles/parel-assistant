@@ -4,7 +4,7 @@ from tkinter import simpledialog as simpel
 from openeentranslate import openen as op
 from openlandcode import openen as landc
 
-taal = landc
+taal = landc()
 
 root = tk.Tk()
 root.withdraw()
