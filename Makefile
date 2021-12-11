@@ -32,3 +32,6 @@ rmnl:
 	mkdir nl
 	cd nl
 	wget https://raw.githubusercontent.com/Abelkrijgtalles/parel-assistant/master/teksten/nl/vertaling.json
+
+run:
+	python3 main.py
