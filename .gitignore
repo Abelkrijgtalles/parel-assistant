@@ -9,3 +9,4 @@ test.json
 /videolatenzien
 /node_modules
 /ai
+/commands/__pycache__
