@@ -1251,22 +1251,15 @@ static const char __pyx_k_config[] = "config";
 static const char __pyx_k_import[] = "__import__";
 static const char __pyx_k_main_2[] = "__main__";
 static const char __pyx_k_openen[] = "openen";
-static const char __pyx_k_system[] = "system";
 static const char __pyx_k_startem[] = "startem";
 static const char __pyx_k_ding_pyx[] = "ding.pyx";
 static const char __pyx_k_prostart[] = "prostart";
-static const char __pyx_k_macallert[] = "macallert";
 static const char __pyx_k_welketaal[] = "welketaal";
 static const char __pyx_k_openlandcode[] = "openlandcode";
-static const char __pyx_k_pakketinstall[] = "pakketinstall";
 static const char __pyx_k_openeentranslate[] = "openeentranslate";
-static const char __pyx_k_pakketinstallsuc[] = "pakketinstallsuc";
 static const char __pyx_k_cline_in_traceback[] = "cline_in_traceback";
 static const char __pyx_k_parelassistantding[] = "parelassistantding";
-static const char __pyx_k_pip_install_pygame[] = "pip install pygame";
-static const char __pyx_k_pip_install_turtle[] = "pip install turtle";
 static const char __pyx_k_parelassistant_ding[] = "parelassistant.ding";
-static const char __pyx_k_python_m_pip_install_U_pip[] = "python -m pip install -U pip";
 static PyObject *__pyx_n_s_cline_in_traceback;
 static PyObject *__pyx_n_s_config;
 static PyObject *__pyx_kp_s_ding_pyx;
@@ -1279,7 +1272,6 @@ static PyObject *__pyx_n_s_import;
 static PyObject *__pyx_n_s_input;
 static PyObject *__pyx_n_s_join;
 static PyObject *__pyx_n_s_landc;
-static PyObject *__pyx_n_s_macallert;
 static PyObject *__pyx_n_s_main;
 static PyObject *__pyx_n_s_main_2;
 static PyObject *__pyx_n_s_name;
@@ -1289,18 +1281,12 @@ static PyObject *__pyx_n_s_openeentranslate;
 static PyObject *__pyx_n_s_openen;
 static PyObject *__pyx_n_s_openlandcode;
 static PyObject *__pyx_n_s_os;
-static PyObject *__pyx_n_s_pakketinstall;
-static PyObject *__pyx_n_s_pakketinstallsuc;
 static PyObject *__pyx_n_s_parelassistant_ding;
 static PyObject *__pyx_n_s_parelassistantding;
 static PyObject *__pyx_n_s_path;
-static PyObject *__pyx_kp_s_pip_install_pygame;
-static PyObject *__pyx_kp_s_pip_install_turtle;
 static PyObject *__pyx_n_s_print;
 static PyObject *__pyx_n_s_prostart;
-static PyObject *__pyx_kp_s_python_m_pip_install_U_pip;
 static PyObject *__pyx_n_s_startem;
-static PyObject *__pyx_n_s_system;
 static PyObject *__pyx_n_s_taal;
 static PyObject *__pyx_n_s_test;
 static PyObject *__pyx_n_s_welketaal;
@@ -1579,7 +1565,7 @@ static PyObject *__pyx_pf_14parelassistant_4ding_main(CYTHON_UNUSED PyObject *__
  *         welketaal = input(op(taal, "welketaal"))
  *         f.write(welketaal)             # <<<<<<<<<<<<<<
  * 
- *     print(op(taal, "pakketinstall"))
+ *     print(op(taal, "prostart"))
  */
           __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_f, __pyx_n_s_write); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 20, __pyx_L7_error)
           __Pyx_GOTREF(__pyx_t_3);
@@ -1684,9 +1670,8 @@ static PyObject *__pyx_pf_14parelassistant_4ding_main(CYTHON_UNUSED PyObject *__
   /* "parelassistant/ding.pyx":22
  *         f.write(welketaal)
  * 
- *     print(op(taal, "pakketinstall"))             # <<<<<<<<<<<<<<
- *     print(op(taal, "macallert"))
- * 
+ *     print(op(taal, "prostart"))             # <<<<<<<<<<<<<<
+ *     startem()
  */
   __Pyx_INCREF(__pyx_v_op);
   __pyx_t_3 = __pyx_v_op; __pyx_t_1 = NULL;
@@ -1703,7 +1688,7 @@ static PyObject *__pyx_pf_14parelassistant_4ding_main(CYTHON_UNUSED PyObject *__
   }
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_3)) {
-    PyObject *__pyx_temp[3] = {__pyx_t_1, __pyx_v_taal, __pyx_n_s_pakketinstall};
+    PyObject *__pyx_temp[3] = {__pyx_t_1, __pyx_v_taal, __pyx_n_s_prostart};
     __pyx_t_5 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_9, 2+__pyx_t_9); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 22, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_GOTREF(__pyx_t_5);
@@ -1711,7 +1696,7 @@ static PyObject *__pyx_pf_14parelassistant_4ding_main(CYTHON_UNUSED PyObject *__
   #endif
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_3)) {
-    PyObject *__pyx_temp[3] = {__pyx_t_1, __pyx_v_taal, __pyx_n_s_pakketinstall};
+    PyObject *__pyx_temp[3] = {__pyx_t_1, __pyx_v_taal, __pyx_n_s_prostart};
     __pyx_t_5 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_9, 2+__pyx_t_9); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 22, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_GOTREF(__pyx_t_5);
@@ -1726,9 +1711,9 @@ static PyObject *__pyx_pf_14parelassistant_4ding_main(CYTHON_UNUSED PyObject *__
     __Pyx_INCREF(__pyx_v_taal);
     __Pyx_GIVEREF(__pyx_v_taal);
     PyTuple_SET_ITEM(__pyx_t_2, 0+__pyx_t_9, __pyx_v_taal);
-    __Pyx_INCREF(__pyx_n_s_pakketinstall);
-    __Pyx_GIVEREF(__pyx_n_s_pakketinstall);
-    PyTuple_SET_ITEM(__pyx_t_2, 1+__pyx_t_9, __pyx_n_s_pakketinstall);
+    __Pyx_INCREF(__pyx_n_s_prostart);
+    __Pyx_GIVEREF(__pyx_n_s_prostart);
+    PyTuple_SET_ITEM(__pyx_t_2, 1+__pyx_t_9, __pyx_n_s_prostart);
     __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_2, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 22, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -1739,268 +1724,23 @@ static PyObject *__pyx_pf_14parelassistant_4ding_main(CYTHON_UNUSED PyObject *__
 
   /* "parelassistant/ding.pyx":23
  * 
- *     print(op(taal, "pakketinstall"))
- *     print(op(taal, "macallert"))             # <<<<<<<<<<<<<<
- * 
- *     os.system("python -m pip install -U pip")
- */
-  __Pyx_INCREF(__pyx_v_op);
-  __pyx_t_3 = __pyx_v_op; __pyx_t_2 = NULL;
-  __pyx_t_9 = 0;
-  if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_3))) {
-    __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_3);
-    if (likely(__pyx_t_2)) {
-      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
-      __Pyx_INCREF(__pyx_t_2);
-      __Pyx_INCREF(function);
-      __Pyx_DECREF_SET(__pyx_t_3, function);
-      __pyx_t_9 = 1;
-    }
-  }
-  #if CYTHON_FAST_PYCALL
-  if (PyFunction_Check(__pyx_t_3)) {
-    PyObject *__pyx_temp[3] = {__pyx_t_2, __pyx_v_taal, __pyx_n_s_macallert};
-    __pyx_t_5 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_9, 2+__pyx_t_9); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 23, __pyx_L1_error)
-    __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __Pyx_GOTREF(__pyx_t_5);
-  } else
-  #endif
-  #if CYTHON_FAST_PYCCALL
-  if (__Pyx_PyFastCFunction_Check(__pyx_t_3)) {
-    PyObject *__pyx_temp[3] = {__pyx_t_2, __pyx_v_taal, __pyx_n_s_macallert};
-    __pyx_t_5 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_9, 2+__pyx_t_9); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 23, __pyx_L1_error)
-    __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __Pyx_GOTREF(__pyx_t_5);
-  } else
-  #endif
-  {
-    __pyx_t_1 = PyTuple_New(2+__pyx_t_9); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 23, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_1);
-    if (__pyx_t_2) {
-      __Pyx_GIVEREF(__pyx_t_2); PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_2); __pyx_t_2 = NULL;
-    }
-    __Pyx_INCREF(__pyx_v_taal);
-    __Pyx_GIVEREF(__pyx_v_taal);
-    PyTuple_SET_ITEM(__pyx_t_1, 0+__pyx_t_9, __pyx_v_taal);
-    __Pyx_INCREF(__pyx_n_s_macallert);
-    __Pyx_GIVEREF(__pyx_n_s_macallert);
-    PyTuple_SET_ITEM(__pyx_t_1, 1+__pyx_t_9, __pyx_n_s_macallert);
-    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_1, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 23, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_5);
-    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  }
-  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (__Pyx_PrintOne(0, __pyx_t_5) < 0) __PYX_ERR(0, 23, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-
-  /* "parelassistant/ding.pyx":25
- *     print(op(taal, "macallert"))
- * 
- *     os.system("python -m pip install -U pip")             # <<<<<<<<<<<<<<
- *     os.system("pip install turtle")
- *     os.system("pip install pygame")
- */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_os, __pyx_n_s_system); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 25, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_1 = NULL;
-  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
-    __pyx_t_1 = PyMethod_GET_SELF(__pyx_t_3);
-    if (likely(__pyx_t_1)) {
-      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
-      __Pyx_INCREF(__pyx_t_1);
-      __Pyx_INCREF(function);
-      __Pyx_DECREF_SET(__pyx_t_3, function);
-    }
-  }
-  __pyx_t_5 = (__pyx_t_1) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_1, __pyx_kp_s_python_m_pip_install_U_pip) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_kp_s_python_m_pip_install_U_pip);
-  __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 25, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_5);
-  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-
-  /* "parelassistant/ding.pyx":26
- * 
- *     os.system("python -m pip install -U pip")
- *     os.system("pip install turtle")             # <<<<<<<<<<<<<<
- *     os.system("pip install pygame")
- * 
- */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_os, __pyx_n_s_system); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 26, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_1 = NULL;
-  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
-    __pyx_t_1 = PyMethod_GET_SELF(__pyx_t_3);
-    if (likely(__pyx_t_1)) {
-      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
-      __Pyx_INCREF(__pyx_t_1);
-      __Pyx_INCREF(function);
-      __Pyx_DECREF_SET(__pyx_t_3, function);
-    }
-  }
-  __pyx_t_5 = (__pyx_t_1) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_1, __pyx_kp_s_pip_install_turtle) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_kp_s_pip_install_turtle);
-  __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 26, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_5);
-  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-
-  /* "parelassistant/ding.pyx":27
- *     os.system("python -m pip install -U pip")
- *     os.system("pip install turtle")
- *     os.system("pip install pygame")             # <<<<<<<<<<<<<<
- * 
- *     print(op(taal, "pakketinstallsuc"))
- */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_os, __pyx_n_s_system); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 27, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_1 = NULL;
-  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
-    __pyx_t_1 = PyMethod_GET_SELF(__pyx_t_3);
-    if (likely(__pyx_t_1)) {
-      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
-      __Pyx_INCREF(__pyx_t_1);
-      __Pyx_INCREF(function);
-      __Pyx_DECREF_SET(__pyx_t_3, function);
-    }
-  }
-  __pyx_t_5 = (__pyx_t_1) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_1, __pyx_kp_s_pip_install_pygame) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_kp_s_pip_install_pygame);
-  __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 27, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_5);
-  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-
-  /* "parelassistant/ding.pyx":29
- *     os.system("pip install pygame")
- * 
- *     print(op(taal, "pakketinstallsuc"))             # <<<<<<<<<<<<<<
- *     print(op(taal, "prostart"))
- *     startem()
- */
-  __Pyx_INCREF(__pyx_v_op);
-  __pyx_t_3 = __pyx_v_op; __pyx_t_1 = NULL;
-  __pyx_t_9 = 0;
-  if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_3))) {
-    __pyx_t_1 = PyMethod_GET_SELF(__pyx_t_3);
-    if (likely(__pyx_t_1)) {
-      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
-      __Pyx_INCREF(__pyx_t_1);
-      __Pyx_INCREF(function);
-      __Pyx_DECREF_SET(__pyx_t_3, function);
-      __pyx_t_9 = 1;
-    }
-  }
-  #if CYTHON_FAST_PYCALL
-  if (PyFunction_Check(__pyx_t_3)) {
-    PyObject *__pyx_temp[3] = {__pyx_t_1, __pyx_v_taal, __pyx_n_s_pakketinstallsuc};
-    __pyx_t_5 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_9, 2+__pyx_t_9); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 29, __pyx_L1_error)
-    __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __Pyx_GOTREF(__pyx_t_5);
-  } else
-  #endif
-  #if CYTHON_FAST_PYCCALL
-  if (__Pyx_PyFastCFunction_Check(__pyx_t_3)) {
-    PyObject *__pyx_temp[3] = {__pyx_t_1, __pyx_v_taal, __pyx_n_s_pakketinstallsuc};
-    __pyx_t_5 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_9, 2+__pyx_t_9); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 29, __pyx_L1_error)
-    __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __Pyx_GOTREF(__pyx_t_5);
-  } else
-  #endif
-  {
-    __pyx_t_2 = PyTuple_New(2+__pyx_t_9); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 29, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_2);
-    if (__pyx_t_1) {
-      __Pyx_GIVEREF(__pyx_t_1); PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_1); __pyx_t_1 = NULL;
-    }
-    __Pyx_INCREF(__pyx_v_taal);
-    __Pyx_GIVEREF(__pyx_v_taal);
-    PyTuple_SET_ITEM(__pyx_t_2, 0+__pyx_t_9, __pyx_v_taal);
-    __Pyx_INCREF(__pyx_n_s_pakketinstallsuc);
-    __Pyx_GIVEREF(__pyx_n_s_pakketinstallsuc);
-    PyTuple_SET_ITEM(__pyx_t_2, 1+__pyx_t_9, __pyx_n_s_pakketinstallsuc);
-    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_2, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 29, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_5);
-    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  }
-  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (__Pyx_PrintOne(0, __pyx_t_5) < 0) __PYX_ERR(0, 29, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-
-  /* "parelassistant/ding.pyx":30
- * 
- *     print(op(taal, "pakketinstallsuc"))
- *     print(op(taal, "prostart"))             # <<<<<<<<<<<<<<
- *     startem()
- */
-  __Pyx_INCREF(__pyx_v_op);
-  __pyx_t_3 = __pyx_v_op; __pyx_t_2 = NULL;
-  __pyx_t_9 = 0;
-  if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_3))) {
-    __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_3);
-    if (likely(__pyx_t_2)) {
-      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
-      __Pyx_INCREF(__pyx_t_2);
-      __Pyx_INCREF(function);
-      __Pyx_DECREF_SET(__pyx_t_3, function);
-      __pyx_t_9 = 1;
-    }
-  }
-  #if CYTHON_FAST_PYCALL
-  if (PyFunction_Check(__pyx_t_3)) {
-    PyObject *__pyx_temp[3] = {__pyx_t_2, __pyx_v_taal, __pyx_n_s_prostart};
-    __pyx_t_5 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_9, 2+__pyx_t_9); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 30, __pyx_L1_error)
-    __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __Pyx_GOTREF(__pyx_t_5);
-  } else
-  #endif
-  #if CYTHON_FAST_PYCCALL
-  if (__Pyx_PyFastCFunction_Check(__pyx_t_3)) {
-    PyObject *__pyx_temp[3] = {__pyx_t_2, __pyx_v_taal, __pyx_n_s_prostart};
-    __pyx_t_5 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_9, 2+__pyx_t_9); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 30, __pyx_L1_error)
-    __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __Pyx_GOTREF(__pyx_t_5);
-  } else
-  #endif
-  {
-    __pyx_t_1 = PyTuple_New(2+__pyx_t_9); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 30, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_1);
-    if (__pyx_t_2) {
-      __Pyx_GIVEREF(__pyx_t_2); PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_2); __pyx_t_2 = NULL;
-    }
-    __Pyx_INCREF(__pyx_v_taal);
-    __Pyx_GIVEREF(__pyx_v_taal);
-    PyTuple_SET_ITEM(__pyx_t_1, 0+__pyx_t_9, __pyx_v_taal);
-    __Pyx_INCREF(__pyx_n_s_prostart);
-    __Pyx_GIVEREF(__pyx_n_s_prostart);
-    PyTuple_SET_ITEM(__pyx_t_1, 1+__pyx_t_9, __pyx_n_s_prostart);
-    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_1, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 30, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_5);
-    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  }
-  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (__Pyx_PrintOne(0, __pyx_t_5) < 0) __PYX_ERR(0, 30, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-
-  /* "parelassistant/ding.pyx":31
- *     print(op(taal, "pakketinstallsuc"))
  *     print(op(taal, "prostart"))
  *     startem()             # <<<<<<<<<<<<<<
  */
   __Pyx_INCREF(__pyx_v_startem);
-  __pyx_t_3 = __pyx_v_startem; __pyx_t_1 = NULL;
+  __pyx_t_3 = __pyx_v_startem; __pyx_t_2 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_3))) {
-    __pyx_t_1 = PyMethod_GET_SELF(__pyx_t_3);
-    if (likely(__pyx_t_1)) {
+    __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_3);
+    if (likely(__pyx_t_2)) {
       PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
-      __Pyx_INCREF(__pyx_t_1);
+      __Pyx_INCREF(__pyx_t_2);
       __Pyx_INCREF(function);
       __Pyx_DECREF_SET(__pyx_t_3, function);
     }
   }
-  __pyx_t_5 = (__pyx_t_1) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_1) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
-  __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 31, __pyx_L1_error)
+  __pyx_t_5 = (__pyx_t_2) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_2) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
+  __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 23, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -2092,7 +1832,6 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_input, __pyx_k_input, sizeof(__pyx_k_input), 0, 0, 1, 1},
   {&__pyx_n_s_join, __pyx_k_join, sizeof(__pyx_k_join), 0, 0, 1, 1},
   {&__pyx_n_s_landc, __pyx_k_landc, sizeof(__pyx_k_landc), 0, 0, 1, 1},
-  {&__pyx_n_s_macallert, __pyx_k_macallert, sizeof(__pyx_k_macallert), 0, 0, 1, 1},
   {&__pyx_n_s_main, __pyx_k_main, sizeof(__pyx_k_main), 0, 0, 1, 1},
   {&__pyx_n_s_main_2, __pyx_k_main_2, sizeof(__pyx_k_main_2), 0, 0, 1, 1},
   {&__pyx_n_s_name, __pyx_k_name, sizeof(__pyx_k_name), 0, 0, 1, 1},
@@ -2102,18 +1841,12 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_openen, __pyx_k_openen, sizeof(__pyx_k_openen), 0, 0, 1, 1},
   {&__pyx_n_s_openlandcode, __pyx_k_openlandcode, sizeof(__pyx_k_openlandcode), 0, 0, 1, 1},
   {&__pyx_n_s_os, __pyx_k_os, sizeof(__pyx_k_os), 0, 0, 1, 1},
-  {&__pyx_n_s_pakketinstall, __pyx_k_pakketinstall, sizeof(__pyx_k_pakketinstall), 0, 0, 1, 1},
-  {&__pyx_n_s_pakketinstallsuc, __pyx_k_pakketinstallsuc, sizeof(__pyx_k_pakketinstallsuc), 0, 0, 1, 1},
   {&__pyx_n_s_parelassistant_ding, __pyx_k_parelassistant_ding, sizeof(__pyx_k_parelassistant_ding), 0, 0, 1, 1},
   {&__pyx_n_s_parelassistantding, __pyx_k_parelassistantding, sizeof(__pyx_k_parelassistantding), 0, 0, 1, 1},
   {&__pyx_n_s_path, __pyx_k_path, sizeof(__pyx_k_path), 0, 0, 1, 1},
-  {&__pyx_kp_s_pip_install_pygame, __pyx_k_pip_install_pygame, sizeof(__pyx_k_pip_install_pygame), 0, 0, 1, 0},
-  {&__pyx_kp_s_pip_install_turtle, __pyx_k_pip_install_turtle, sizeof(__pyx_k_pip_install_turtle), 0, 0, 1, 0},
   {&__pyx_n_s_print, __pyx_k_print, sizeof(__pyx_k_print), 0, 0, 1, 1},
   {&__pyx_n_s_prostart, __pyx_k_prostart, sizeof(__pyx_k_prostart), 0, 0, 1, 1},
-  {&__pyx_kp_s_python_m_pip_install_U_pip, __pyx_k_python_m_pip_install_U_pip, sizeof(__pyx_k_python_m_pip_install_U_pip), 0, 0, 1, 0},
   {&__pyx_n_s_startem, __pyx_k_startem, sizeof(__pyx_k_startem), 0, 0, 1, 1},
-  {&__pyx_n_s_system, __pyx_k_system, sizeof(__pyx_k_system), 0, 0, 1, 1},
   {&__pyx_n_s_taal, __pyx_k_taal, sizeof(__pyx_k_taal), 0, 0, 1, 1},
   {&__pyx_n_s_test, __pyx_k_test, sizeof(__pyx_k_test), 0, 0, 1, 1},
   {&__pyx_n_s_welketaal, __pyx_k_welketaal, sizeof(__pyx_k_welketaal), 0, 0, 1, 1},

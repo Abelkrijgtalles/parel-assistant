@@ -19,13 +19,5 @@ def main():
         welketaal = input(op(taal, "welketaal"))
         f.write(welketaal)
 
-    print(op(taal, "pakketinstall"))
-    print(op(taal, "macallert"))
-
-    os.system("python -m pip install -U pip")
-    os.system("pip install turtle")
-    os.system("pip install pygame")
-
-    print(op(taal, "pakketinstallsuc"))
     print(op(taal, "prostart"))
     startem()
