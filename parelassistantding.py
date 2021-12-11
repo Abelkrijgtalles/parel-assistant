@@ -1,15 +1,16 @@
 import os
 from openeentranslate import openen as op
 from openlandcode import openen as landc
+import commands
 
 taal = landc()
 
 print(op("nl", "upcheck"))
 os.system("curl https://raw.githubusercontent.com/Abelkrijgtalles/parel-assistant/master/config/versie.txt > config/versieonline.txt")
 
-with open("config/versieonline.txt") as versieonlinenietint:
+with open(os.path.join("config", "versieonline.txt")) as versieonlinenietint:
     versieonline = int(versieonlinenietint.read())
-with open("config/versie.txt") as versienietint:
+with open(os.path.join("config", "versie.txt")) as versienietint:
     versie = int(versienietint.read())
 
 if versieonline > versie:
@@ -32,6 +33,27 @@ while True:
     naamgui = (str.upper(naamgui))
     naamgui = naamgui.replace(" ", "")
     print(naamgui, op(taal, "open"))
-    os.system('python3 commands/'+str(naamgui)+'.py')
+    if naamgui == "SONGTEKSTEN":
+        commands.songteksten()
+    elif naamgui == "DATA":
+        commands.data()
+    elif naamgui == "FEITEN":
+        commands.feiten()
+    elif naamgui == "GILLEN":
+        commands.gillen()
+    elif naamgui == "LANDEN":
+        commands.landen()
+    elif naamgui == "PAASDAG":
+        commands.paasdag()
+    elif naamgui == "TEKENCORONA":
+        commands.tekencorona()
+    elif naamgui == "WEER":
+        commands.weer()
+    elif naamgui == "WIEBENIK":
+        commands.wiebenik
+    elif naamgui == "STOP":
+        break
+    else:
+        print(op(taal, "downgrade"))
 
 # EINDE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

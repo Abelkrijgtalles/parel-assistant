@@ -6,16 +6,16 @@ Help met vertalen! https://abelr.tk/vp
 
 Hoi
 Dit is de beste nederlandse assistant 😁
-Het is nog steeds in dev
+Het is nog steeds in develepment
 Als je een bug/error vindt mag je gerust een pull request maken 😀 Meer info hieronder
 
 # install/setup
 
 Je hebt een Windows of Linux computer hebben. Macs worden niet ondersteund.
-je hebt ook python 3 nodig
-en je moet ook python aan PATH toe gevoegd hebben.
+je hebt ook python 3 nodig
+en je moet ook python aan PATH toe gevoegd hebben.
 git is ook handig om te hebben
-Run daar naar gewoon setup.py
+Typ dan in terminal: `python3 main.py`
 
 # zelf bugs fixen/pull request maken
 

@@ -4,7 +4,8 @@
 /videolatenzien/.vscode
 /commands/data.pkl
 test.py
-config/versieonline.txt
+/config/versieonline.txt
 test.json
-videolatenzien
-node_modules
+/videolatenzien
+/node_modules
+/ai
