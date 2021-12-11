@@ -3,12 +3,7 @@ name: Publish DockerHub image
 on:
   push:
     branches:
-      - 'main'
-    tags:
-      - 'v*'
-  pull_request:
-    branches:
-      - 'main'
+      - 'master'
 
 jobs:
   build-container:
