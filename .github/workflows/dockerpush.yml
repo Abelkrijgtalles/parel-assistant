@@ -1,16 +1,16 @@
 on:
   push:
     branches: [ master ]
+    runs-on: ubuntu-latest
 
 jobs:
-  runs-on: ubuntu-latest
-  steps:
-  - name: Checkout
-    uses: actions/checkout@v2.4.0
-  - name: Push
-    uses: mr-smithers-excellent/docker-build-push@v5
+  push:
+  - uses: actions/checkout@v2.4.0
+    name: checkout
+  - uses: mr-smithers-excellent/docker-build-push@v3
+    name: push
     with:
-      image: abelkrijgtalles/parel-assistant
+      image: abelkrijgtalles/parelassistant
       registry: docker.io
       username: ${{ secrets.DOCKER_USERNAME }}
       password: ${{ secrets.DOCKER_PASSWORD }}
