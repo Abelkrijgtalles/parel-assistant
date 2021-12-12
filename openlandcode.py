@@ -1,4 +1,5 @@
 def openen():
-    with open("config/welketaal.txt") as welketaal:
+    import os
+    with open(os.path.join("config", "welketaal.txt")) as welketaal:
         yeet = str(welketaal.read())
         return yeet
