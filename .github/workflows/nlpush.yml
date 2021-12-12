@@ -15,9 +15,7 @@ jobs:
         fetch-depth: 0 # otherwise, there would be errors pushing refs to the destination repository.
     - name: Create local changes
       run: |
-        make rmnl
-        cd ../..
-        rm -f -r alleenvoorgithubtesten
+        make compileclean
     - name: Commit files
       run: |
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -27,4 +25,4 @@ jobs:
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.TOKEN_GITHUB }}
-        branch: $GITHUB_SERVER_URL/Abelkrijgtalles/parel-assistant-nl
+        branch: master

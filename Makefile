@@ -19,6 +19,10 @@ compile:
 	pip install cython
 	python3 setup.py build_ext --inplace
 
+compileclean:
+	pip install cython
+	python3 setup.py build_ext --inplace
+
 rmbuild:
 	rm -f -r parelassistant
 	rm -f -r ding.c
