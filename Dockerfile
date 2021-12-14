@@ -3,5 +3,7 @@ FROM node
 COPY . /home/parel-assistant
 RUN cd /home/parel-assistant
 RUN cd /home/parel-assistant/website
-RUN npm ci
+RUN npm install next
+RUN npm install react
+RUN npm install react-dom
 RUN cd ..
