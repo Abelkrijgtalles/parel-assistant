@@ -3,5 +3,5 @@ FROM node
 COPY . /home/parel-assistant
 RUN cd /home/parel-assistant
 RUN cd /home/parel-assistant/website
-RUN npm install
+RUN npm ci
 RUN cd ..
