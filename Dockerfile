@@ -3,10 +3,3 @@ FROM node:current-bullseye-slim
 WORKDIR /home/parel-assistant
 COPY . /home/parel-assistant
 RUN cd /home/parel-assistant
-RUN cd /home/parel-assistant/website
-WORKDIR /home/parel-assistant/website
-RUN npm install next
-RUN npm install react
-RUN npm install react-dom
-RUN cd ..
-WORKDIR /home/parel-assistant
