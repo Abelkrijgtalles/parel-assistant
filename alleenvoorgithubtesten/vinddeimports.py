@@ -13,7 +13,7 @@ os.system("cp " + tkinter.__file__ + os.path.join(".", "tkinter.py"))
 import webbrowser
 os.system("cp " + webbrowser.__file__ + os.path.join(".", "webbrowser.py"))
 import pickle
-os.system("cp " + pickle.__file__ + os.path.join(".", "pickle.py")
+os.system("cp " + pickle.__file__ + os.path.join(".", "pickle.py"))
 
 os.system("cp " + pickle.__file__ + os.path.join(".", "commands", "pickle.py"))
 os.system("cp " + os.__file__ + os.path.join(".", "commands", "os.py"))
