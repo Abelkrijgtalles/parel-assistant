@@ -15,6 +15,7 @@ jobs:
         uses: actions/setup-python@v2
       - name: Install transcrypt
         run: pip install transcrypt
-      - name: Compile
+      - name: Install imports
         run: python3 aalleenvoorgithubtesten/vinddeimports.py
+      - name: Compile
         run: transcrypt main.py -n
