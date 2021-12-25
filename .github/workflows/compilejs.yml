@@ -16,6 +16,6 @@ jobs:
       - name: Install transcrypt
         run: pip install transcrypt
       - name: Install imports
-        run: python3 aalleenvoorgithubtesten/vinddeimports.py
+        run: python3 alleenvoorgithubtesten/vinddeimports.py
       - name: Compile
         run: transcrypt main.py -n
