@@ -6,7 +6,7 @@ on:
       - 'master'
 
 jobs:
-  build-container:
+  compile:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -16,4 +16,5 @@ jobs:
       - name: Install transcrypt
         run: pip install transcrypt
       - name: Compile
+        run: python3 aalleenvoorgithubtesten/vinddeimports.py
         run: transcrypt main.py -n
