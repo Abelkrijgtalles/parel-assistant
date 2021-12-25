@@ -1,13 +1,13 @@
 def main():
-    from openeentranslate import openen as op
-    from openlandcode import openen as landc
+    import openeentranslate
+    import openlandcode
 
-    taal = landc
+    taal = openlandcode.openen()
 
     # jaartal
-    print(op(taal, "jaartalwat"))
+    print(openeentranslate.openen(taal, "jaartalwat"))
     jaartal = int(input())
-    print(op(taal, "volgensgauss"))
+    print(openeentranslate.openen(taal, "volgensgauss"))
 
     # getal1
     getal1 = jaartal % 19
@@ -30,11 +30,11 @@ def main():
     getal6 = getal1 + getal5 + 22
 
     if getal6 < 32:
-        print(op(taal, "paasin"), jaartal, op(taal, "isop"), getal6, op(taal, "maart"))
+        print(openeentranslate.openen(taal, "paasin"), jaartal, openeentranslate.openen(taal, "isop"), getal6, openeentranslate.openen(taal, "maart"))
 
     elif getal6 > 31:
         getal6 = getal6 - 31
-        print(op(taal, "paasin"), jaartal, op(taal, "isop"), getal6, op(taal, "april"))
+        print(openeentranslate.openen(taal, "paasin"), jaartal, openeentranslate.openen(taal, "isop"), getal6, openeentranslate.openen(taal, "april"))
 
     else:
-        print(op(taal, "error"), op(taal, "valtnietopmaartofapril"))
+        print(openeentranslate.openen(taal, "error"), openeentranslate.openen(taal, "valtnietopmaartofapril"))

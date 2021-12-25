@@ -1,39 +1,39 @@
 def main():
     import pickle
-    from openeentranslate import openen as op
-    from openlandcode import openen as landc
+    import openeentranslate
+    import openlandcode
 
-    taal = landc()
+    taal = openlandcode.openen()
     aanhalingsteken = '"'
     data = []
-    print(op(taal, "dataalgemaakt") + " " + 'J/N')
+    print(openeentranslate.openen(taal, "dataalgemaakt") + " " + 'J/N')
     dataalgemaakt = (str.upper(input()))
     if dataalgemaakt == 'N':
         data = []
-        print(op(taal, "voornaam"))
+        print(openeentranslate.openen(taal, "voornaam"))
         data.append(input())
-        print(op(taal, "achternaam"))
+        print(openeentranslate.openen(taal, "achternaam"))
         data.append(input())
-        print(op(taal, "leeftijd"))
+        print(openeentranslate.openen(taal, "leeftijd"))
         data.append(input())
-        print(op(taal, "woonplaats"))
+        print(openeentranslate.openen(taal, "woonplaats"))
         data.append(input())
-        print(op(taal, "eten"))
+        print(openeentranslate.openen(taal, "eten"))
         data.append(input())
-        print(op(taal, "ietsanders"))
+        print(openeentranslate.openen(taal, "ietsanders"))
         data.append(input())
-        print(op(taal, "voornaamis") ,data[0] ,'.')
-        print(op(taal, "achternaamis") ,data[1] , '.')
-        print(op(taal, "leeftijdis") ,data[2] , ".")
-        print(op(taal, "datanogeenkeer"))
+        print(openeentranslate.openen(taal, "voornaamis") ,data[0] ,'.')
+        print(openeentranslate.openen(taal, "achternaamis") ,data[1] , '.')
+        print(openeentranslate.openen(taal, "leeftijdis") ,data[2] , ".")
+        print(openeentranslate.openen(taal, "datanogeenkeer"))
         with open('data.pkl', 'wb') as file:
             pickle.dump(data, file)
     else:
         with open('data.pkl', 'rb') as file:
             data = pickle.load(file)
-        print(op(taal, "voornaamis") ,data[0] ,'.')
-        print(op(taal, "achternaamis") ,data[1] , '.')
-        print(op(taal, "leeftijdis") ,data[2] , ".")
-        print(op(taal, "woonplaatsis"), data[3])
-        print(op(taal, "etenis"), data[4])
-        print(op(taal, "iestandersis"), data[5])
+        print(openeentranslate.openen(taal, "voornaamis") ,data[0] ,'.')
+        print(openeentranslate.openen(taal, "achternaamis") ,data[1] , '.')
+        print(openeentranslate.openen(taal, "leeftijdis") ,data[2] , ".")
+        print(openeentranslate.openen(taal, "woonplaatsis"), data[3])
+        print(openeentranslate.openen(taal, "etenis"), data[4])
+        print(openeentranslate.openen(taal, "iestandersis"), data[5])

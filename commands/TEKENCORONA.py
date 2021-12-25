@@ -1,11 +1,11 @@
 def main():
     import turtle as t
-    from openeentranslate import openen as op
-    from openlandcode import openen as landc
+    import openeentranslate
+    import openlandcode
 
-    taal = landc()
+    taal = openlandcode.openen()
 
-    print(op(taal, "nieuwvenster"))
+    print(openeentranslate.openen(taal, "nieuwvenster"))
     t.color('green')
     t.bgcolor('black')
     t.speed(11)

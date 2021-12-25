@@ -1,11 +1,11 @@
 def main():
     import webbrowser as web
-    from openeentranslate import openen as op
-    from openlandcode import openen as landc
+    import openeentranslate
+    import openlandcode
 
-    taal = landc()
-    
-    print(op(taal, "zoeken"))
+    taal = openlandcode.openen()
+
+    print(openeentranslate.openen(taal, "zoeken"))
     nummer = str.upper(input())
     web.open('https://genius.com/search?q='+str(nummer))
-    print(op(taal, "website"), 'https://genius.com/search?q='+str(nummer), op(taal, "open"))
+    print(openeentranslate.openen(taal, "website"), 'https://genius.com/search?q='+str(nummer), openeentranslate.openen(taal, "open"))

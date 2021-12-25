@@ -1,6 +1,7 @@
-import json
 def openen(taal, bestand):
-    with open("teksten/" + taal + "/vertaling.json") as ietsofzo:
+    import json
+    import os
+    with open(os.path.join("teksten", taal , "vertaling.json")) as ietsofzo:
         ietsofzo = str(ietsofzo.read())
 
 

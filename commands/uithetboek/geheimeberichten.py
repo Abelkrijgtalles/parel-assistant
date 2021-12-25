@@ -1,6 +1,6 @@
 def main():
-    from tkinter import messagebox, simpledialog, Tk
-    from random import choice
+    import tkinter
+    import random
 
     def is_even(getal):
         return getal % 2 == 0
@@ -36,7 +36,7 @@ def main():
         valse_letters = ["a", "b", "c", "d", "e", "f", "g", "i", "r", "s", "t", "u", "v"]
         for teller in range(0, len(bericht)):
             gecodeerde_lijst.append(bericht[teller])
-            gecodeerde_lijst.append(choice(valse_letters))
+            gecodeerde_lijst.append(random.choice(valse_letters))
         nieuw_bericht = "".join(gecodeerde_lijst)
         gecodeerd_bericht = "".join(reversed(nieuw_bericht))
         gecodeerd_bericht = wissel_letters(gecodeerd_bericht)
@@ -50,26 +50,26 @@ def main():
         return nieuw_bericht
 
     def ontvang_taak():
-        taak = simpledialog.askstring("Taak", "Wil je coderen of decoderen")
+        taak = tkinter.simpledialog.askstring("Taak", "Wil je coderen of decoderen")
         return taak
 
     def ontvang_bericht():
-        bericht = simpledialog.askstring("Bericht", "Voer het geheime bericht in :")
+        bericht = tkinter.simpledialog.askstring("Bericht", "Voer het geheime bericht in :")
         return bericht
 
-    root = Tk()
+    root = tkinter.Tk()
 
     while True:
         taak = ontvang_taak()
         if taak == "coderen":
             bericht = ontvang_bericht()
             gecodeerd = coderen(bericht)
-            messagebox.showinfo("Het beveiligde bericht is:", gecodeerd)
+            tkinter.messagebox.showinfo("Het beveiligde bericht is:", gecodeerd)
             print(gecodeerd)
         elif taak == "decoderen":
             bericht = ontvang_bericht()
             gedecodeerd = decoderen(bericht)
-            messagebox.showinfo("Dit was het:", gedecodeerd)
+            tkinter.messagebox.showinfo("Dit was het:", gedecodeerd)
             print(gedecodeerd)
         else:
             break

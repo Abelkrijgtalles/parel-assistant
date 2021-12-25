@@ -1,8 +1,8 @@
 def main():
-    from openeentranslate import openen as op
-    from openlandcode import openen as landc
+    import openeentranslate
+    import openlandcode
 
-    taal = landc
+    taal = openlandcode.openen()
 
-    print('Hier zijn ze')
-    print(op(taal, "landen"))
+    print(openeentranslate.openen(taal, "hierlanden"))
+    print(openeentranslate.openen(taal, "landen"))
