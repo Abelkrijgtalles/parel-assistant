@@ -5,7 +5,8 @@ def main():
     taal = landc
 
     # jaartal
-    jaartal = int(input(op(taal, "jaartalwat")))
+    print(op(taal, "jaartalwat"))
+    jaartal = int(input())
     print(op(taal, "volgensgauss"))
 
     # getal1

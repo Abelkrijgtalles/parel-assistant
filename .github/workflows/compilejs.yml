@@ -1,0 +1,19 @@
+name: Compile to JS
+
+on:
+  push:
+    branches:
+      - 'master'
+
+jobs:
+  build-container:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v2
+      - name: Install transcrypt
+      - run: pip install transcrypt
+      - name: Compile
+      - run: transcrypt main.py -n

@@ -1,3 +1,3 @@
-from parelassistant import ding
+import ding
 
 ding.main()

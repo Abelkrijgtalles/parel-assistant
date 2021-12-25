@@ -7,7 +7,8 @@ def main():
     
     taal = landc()
 
-    ding = str.upper(input(op(taal, "watuitboek")))
+    print(op(taal, "watuitboek"))
+    ding = str.upper(input())
     ding = ding.replace(" ", "")
     if ding == "GEHEIMEBERICHTEN":
         geheimeberichten()

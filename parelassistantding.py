@@ -14,11 +14,13 @@ with open(os.path.join("config", "versie.txt")) as versienietint:
     versie = int(versienietint.read())
 
 if versieonline > versie:
-    updateinstall = input(op(taal, "updateinstall"), "J/N")
+    print(op(taal, "updateinstall"), "J/N")
+    updateinstall = input()
     updateinstall = updateinstall.upper()
     updateinstall = updateinstall.replace(" ", "")
     if updateinstall == "J":
-        isgit = input(op(taal, "updateinstall"), "J/N")
+        print(op(taal, "isgit"), "J/N")
+        isgit = input()
         isgit = isgit.upper()
         isgit = isgit.replace(" ", "")
         if isgit == "J":
@@ -29,7 +31,8 @@ if versieonline > versie:
 naamgui = ""
 
 while True:
-    naamgui = input(op(taal, "wat"))
+    print(op(taal, "wat"))
+    naamgui = input()
     naamgui = (str.upper(naamgui))
     naamgui = naamgui.replace(" ", "")
     print(naamgui, op(taal, "open"))
