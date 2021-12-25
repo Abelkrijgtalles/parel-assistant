@@ -14,6 +14,6 @@ jobs:
       - name: Set up Python 3.8
         uses: actions/setup-python@v2
       - name: Install transcrypt
-      - run: pip install transcrypt
+        run: pip install transcrypt
       - name: Compile
-      - run: transcrypt main.py -n
+        run: transcrypt main.py -n
