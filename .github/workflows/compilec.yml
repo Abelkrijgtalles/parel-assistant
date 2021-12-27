@@ -14,4 +14,4 @@ jobs:
       - name: Install Nuitka
         run: git clone https://github.com/Nuitka/Nuitka && cd Nuitka && python3 setup.py install
       - name: Compile
-        run: python3 Nuitka/bin/nuitka main.py --static-libpython=no --onefile --follow-imports --disable-ccache --show-progress --full-compat --assume-yes-for-downloads
+        run: python3 Nuitka/bin/nuitka main.py --static-libpython=no --onefile --follow-imports --disable-ccache --show-progress --full-compat --assume-yes-for-downloads --linux-onefile-icon=logo/Logo64.ico
