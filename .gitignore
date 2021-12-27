@@ -27,3 +27,4 @@ test.json
 /website/.env.test.local
 /website/.env.production.local
 /website/.vercel
+main.bin

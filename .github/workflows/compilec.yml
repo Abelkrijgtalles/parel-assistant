@@ -1,0 +1,17 @@
+name: Compile to C
+
+on:
+  push:
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v2
+      - name: Install Nuitka
+        run: git clone https://github.com/Nuitka/Nuitka && cd Nuitka && python3 setup.py install
+      - name: Compile
+        run: python3 bin/nuitka ../main.py --static-libpython=no --onefile --follow-imports

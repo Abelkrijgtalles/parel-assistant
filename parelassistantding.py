@@ -37,23 +37,19 @@ while True:
     naamgui = naamgui.replace(" ", "")
     print(naamgui, openeentranslate.openen(taal, "open"))
     if naamgui == "SONGTEKSTEN":
-        commands.songteksten()
+        commands.songteksten.main()
     elif naamgui == "DATA":
-        commands.data()
+        commands.data.main()
     elif naamgui == "FEITEN":
-        commands.feiten()
+        commands.feiten.main()
     elif naamgui == "GILLEN":
-        commands.gillen()
+        commands.gillen.main()
     elif naamgui == "LANDEN":
-        commands.landen()
+        commands.landen.main()
     elif naamgui == "PAASDAG":
-        commands.paasdag()
+        commands.paasdag.main()
     elif naamgui == "TEKENCORONA":
-        commands.tekencorona()
-    elif naamgui == "WEER":
-        commands.weer()
-    elif naamgui == "WIEBENIK":
-        commands.wiebenik
+        commands.tekencorona.main()
     elif naamgui == "STOP":
         break
     else:

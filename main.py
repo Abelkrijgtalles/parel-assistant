@@ -21,3 +21,4 @@ def main():
 
     print(openeentranslate.openen(taal, "prostart"))
     parelassistantding.main()
+main()

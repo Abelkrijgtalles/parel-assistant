@@ -14,21 +14,6 @@ pushnm:
 terminalsafe:
 	python3 alleenvoorgithubtesten/testterminal.py > test.py
 
-compile:
-	make rmbuild
-	pip install cython
-	python3 setup.py build_ext --inplace
-
-compileclean:
-	pip install cython
-	python3 setup.py build_ext --inplace
-
-rmbuild:
-	rm -f -r parelassistant
-	rm -f -r ding.c
-	rm -f -r build
-	rm -f -r __pycache__
-
 rmnl:
 	rm -f -r teksten
 	mkdir teksten
