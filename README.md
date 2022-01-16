@@ -16,8 +16,9 @@ je hebt ook python 3 nodig
 en je moet ook python aan PATH toe gevoegd hebben.
 git is ook handig om te hebben
 Typ dan in terminal: `python3 main.py`
+Of als je flutter hebt kan je `flutter run` typen (Als het helemaal ondersteund wordt)
 
-# zelf bugs fixen/pull request maken
+# ondersteunde programmeertalen
 
-Als je een pull request gaat maken moet je in het bestand: "config/toevoegen.txt" variabelen toevoegen die je gebruikt in de command "os.system()" (in python). Als je dat niet doet zal de test falen.
-Heb je geen variabelen gebruikt? Dan hoef je niks toetevoegen. 
+- [x] Python 3
+- [ ] Flutter
