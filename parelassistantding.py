@@ -2,6 +2,7 @@ import os
 import openeentranslate
 import openlandcode
 import commands
+import ai.main
 
 taal = openlandcode.openen()
 
@@ -33,26 +34,33 @@ naamgui = ""
 while True:
     print(openeentranslate.openen(taal, "wat"))
     naamgui = input()
-    naamgui = (str.upper(naamgui))
-    naamgui = naamgui.replace(" ", "")
-    print(naamgui, openeentranslate.openen(taal, "open"))
+    naamgui = ai.main.main(naamgui)
     if naamgui == "SONGTEKSTEN":
+        print(naamgui, openeentranslate.openen(taal, "open"))
         commands.songteksten.main()
     elif naamgui == "DATA":
+        print(naamgui, openeentranslate.openen(taal, "open"))
         commands.data.main()
     elif naamgui == "FEITEN":
+        print(naamgui, openeentranslate.openen(taal, "open"))
         commands.feiten.main()
     elif naamgui == "GILLEN":
+        print(naamgui, openeentranslate.openen(taal, "open"))
         commands.gillen.main()
     elif naamgui == "LANDEN":
+        print(naamgui, openeentranslate.openen(taal, "open"))
         commands.landen.main()
     elif naamgui == "PAASDAG":
+        print(naamgui, openeentranslate.openen(taal, "open"))
         commands.paasdag.main()
     elif naamgui == "TEKENCORONA":
+        print(naamgui, openeentranslate.openen(taal, "open"))
         commands.tekencorona.main()
     elif naamgui == "STOP":
         break
+    elif naamgui == "NIKS":
+        print(openeentranslate.openen(taal, "niks"))
     else:
-        print(openeentranslate.openen(taal, "downgrade"))
+        print(openeentranslate.openen(taal, "niks"))
 
 # EINDE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
