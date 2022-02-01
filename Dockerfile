@@ -6,7 +6,6 @@ ENV STARTUPDIR /dockerstartup
 ENV INST_SCRIPTS $STARTUPDIR/install
 WORKDIR $HOME
 
-FROM ubuntu:latest
 FROM gcc
 FROM python:3.11.0a3-slim-bullseye
 
