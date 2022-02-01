@@ -12,7 +12,7 @@ FROM gcc
 FROM python:3.11.0a3-slim-bullseye
 RUN apt-get -y update
 RUN apt-get install git -y
-RUN git clone https://github.com/Abelkrijgtalles/parelassistant $HOME/Desktop/parelassistant
+RUN git clone https://github.com/Abelkrijgtalles/parel-assistant.git $HOME/Desktop/parelassistant
 ######### End Customizations ###########
 
 RUN chown 1000:0 $HOME
