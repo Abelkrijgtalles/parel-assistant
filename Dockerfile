@@ -10,7 +10,8 @@ WORKDIR $HOME
 FROM ubuntu:latest
 FROM gcc
 FROM python:3.11.0a3-slim-bullseye
-RUN apt install git -y
+RUN apt-get -y update
+RUN apt-get install git -y
 RUN git clone https://github.com/Abelkrijgtalles/parelassistant $HOME/Desktop/parelassistant
 ######### End Customizations ###########
 
