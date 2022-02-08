@@ -16,9 +16,7 @@ je hebt ook python 3 nodig
 en je moet ook python aan PATH toe gevoegd hebben.
 git is ook handig om te hebben
 Typ dan in terminal: `python3 main.py`
-Of als je flutter hebt kan je `flutter run` typen (Als het helemaal ondersteund wordt)
 
 # ondersteunde programmeertalen
 
 - [x] Python 3
-- [ ] Flutter
