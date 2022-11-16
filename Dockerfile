@@ -9,7 +9,7 @@ WORKDIR $HOME
 ######### Customize Container Here ###########
 FROM ubuntu:latest
 FROM gcc
-FROM python:3.11-rc-slim
+FROM python:3.12-rc-slim
 RUN apt-get -y update
 RUN apt-get install git -y
 RUN git clone https://github.com/Abelkrijgtalles/parel-assistant.git $HOME/Desktop/parelassistant
